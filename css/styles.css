@@ -80,21 +80,32 @@ ul {
 
 .relative {
     /* add relative properties here */
+    position: relative;
+    top: 40px;
+    left: 40px;
+    
 }
 
 .relative-2 {
     /* add relative-2 properties here */
+    position: relative;
 }
 
+/* Browser thinks the element does not exist anymore */
 .absolute {
-    /* add absolute properties here */
+    position: absolute; 
+    top: 0;
+    right: 0;
+    
 }
 
 .absolute-2 {
     width: 200px;
     height: 75px;
     border: 2px solid #a89070;
-    /* add absolute-2 properties here */
+    position: absolute;
+    right: 0;
+    bottom: -10px;
 }
 
 .absolute-2 .box-paragraph {
@@ -104,5 +115,8 @@ ul {
 }
 
 .fixed {
-    /* add fixed properties here */
+    position: fixed;
+    top: 50%;
+    right: 0;
 }
+/* Same as absolute positioning except when scrolled it stays at the same spot, unlike absolute positioning. */
